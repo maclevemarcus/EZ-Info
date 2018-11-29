@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_email_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="enter email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_lock_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="enter password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/nav_person"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="enter name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/phoneNo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_phone_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="enter phone number"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/venue_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="enter address"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="393dp">
+
+                <RadioButton
+                    android:id="@+id/radiostaff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiobuttonbg"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Staff" />
+
+                <RadioButton
+                    android:id="@+id/radioparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiobuttonbg"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Parent" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_round"
+                android:text="REGISTER"
+                android:textColor="#fff" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/SignInText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Already register, Sign me in!"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

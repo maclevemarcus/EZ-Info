@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EZ INFO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_login">User Login</string>
+    <string name="hint_email">customer@email.com</string>
+    <string name="hint_password">password</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_logout">LOGOUT</string>
+    <string name="button_forget_password">Forgot Your Password?</string>
+    <string name="button_register_long">New user? Click here to register your new account</string>
+    <string name="button_register">REGISTER</string>
+    <string name="title_register">User Registration</string>
+    <string name="button_login_long">Already Registered? Click Here To Login</string>
+    <string name="hint_name">Customer Name</string>
+    <string name="hint_phone_no">0123456789</string>
+    <string name="hint_address">Customer address</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="button_update">UPDATE</string>
+    <string name="text_loading">.....</string>
+    <string name="button_register_email">Register With Email</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "495814631017",
+    "firebase_url": "https://bergurudgndin.firebaseio.com",
+    "project_id": "bergurudgndin",
+    "storage_bucket": "bergurudgndin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495814631017:android:79a0980122ed6339",
+        "android_client_info": {
+          "package_name": "com.example.macleve.bergurudgndin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495814631017-8qdd6a10l3t7ufkl3t1fv3gtcl1v06c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.macleve.bergurudgndin",
+            "certificate_hash": "f38053672de4f0be98c7e6db4404cee91ef00c9c"
+          }
+        },
+        {
+          "client_id": "495814631017-g8qsslrgj1a22sornop4cb0kot31e7ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY4m7BC-vwrxb3cl3rQbzDrIW6R4L9A6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495814631017-g8qsslrgj1a22sornop4cb0kot31e7ja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

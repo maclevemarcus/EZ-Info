@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailFragment"
+    android:orientation="vertical">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/EditPostBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="15dp"
+        android:alpha="0.8"
+        android:background="@drawable/circlebackgroundpink"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_more" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/eventIMG"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            android:background="@drawable/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/Ename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Event Name"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/venue_24dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/Evenue"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:hint="Venue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/date"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/Edate"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/participant"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/Eparnum"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:hint="PartNo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Edesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Button
+            android:id="@+id/AttenConfirmBtn"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_round"
+            android:text="CONFIRM ATTENDANCE"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

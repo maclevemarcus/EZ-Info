@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imgEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="15dp"
+        android:alpha="0.8"
+        android:background="@drawable/circlebackgroundpink"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_more" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <EditText
+                android:id="@+id/eventet"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_event_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="event name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="56dp" />
+
+            <EditText
+                android:id="@+id/venueet"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/eventet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/venue_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="venue"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <EditText
+                android:id="@+id/dateet"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/venueet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/date"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:ems="10"
+                android:hint="date"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="173dp" />
+
+
+            <EditText
+                android:id="@+id/descriptionet"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/dateet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_description_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="event description"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="232dp" />
+
+            <Button
+                android:id="@+id/createEventBtn"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/descriptionet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_round"
+                android:text="CREATE POST"
+                android:textColor="#fff"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="309dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

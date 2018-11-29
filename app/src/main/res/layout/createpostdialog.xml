@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:alpha="1">
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_cancel_black_24dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:textColor="#696969"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <Button
+            android:id="@+id/createEventBtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button_round"
+            android:text="EVENT"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/createAnnBtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_round"
+            android:text="ANNOUNCEMENT"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>
